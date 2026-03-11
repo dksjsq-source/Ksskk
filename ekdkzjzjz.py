@@ -13,7 +13,7 @@ import webbrowser
 
 required_libs = ["requests", "colorama", "cfonts"]
 
-df install_libs():
+def install_libs():
     for lib in required_libs:
         try:
             __import__(lib)
@@ -21,7 +21,7 @@ df install_libs():
             print(f"[+] تثبيت المكتبة: {lib}")
             subprocess.check_call([sys.executable, "-m", "pip", "install", lib])
 
-install_libs()
+except install_libs()
 
 init(autoreset=True)
 lock = threading.Lock()
