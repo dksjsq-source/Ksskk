@@ -17,7 +17,7 @@ df install_libs():
     for lib in required_libs:
         try:
             __import__(lib)
-        except ImportError:
+         ImportError:
             print(f"[+] تثبيت المكتبة: {lib}")
             subprocess.check_call([sys.executable, "-m", "pip", "install", lib])
 
