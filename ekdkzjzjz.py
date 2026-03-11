@@ -13,7 +13,7 @@ import webbrowser
 
 required_libs = ["requests", "colorama", "cfonts"]
 
-def install_libs():
+df install_libs():
     for lib in required_libs:
         try:
             __import__(lib)
