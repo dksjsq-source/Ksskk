@@ -17,11 +17,11 @@ def install_libs():
     for lib in required_libs:
         try:
             __import__(lib)
-         ImportError:
+        except ImportError:
             print(f"[+] تثبيت المكتبة: {lib}")
             subprocess.check_call([sys.executable, "-m", "pip", "install", lib])
 
-except install_libs()
+install_libs()
 
 init(autoreset=True)
 lock = threading.Lock()
